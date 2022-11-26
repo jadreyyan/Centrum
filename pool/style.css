@@ -1,0 +1,78 @@
+html{
+	background-image: url("img/background.JPG");
+	background-size: cover;
+	box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.7);
+	background-repeat: no-repeat;
+}
+/* Starts of Navigation Bar*/
+.container-nav{
+	text-align: center;
+	color: white;
+}
+.container-nav ul.nav{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.nav li{
+	display: inline-block;
+	text-transform: uppercase;
+}
+@font-face{
+    font-family: PatuaOne-Regular;
+    src: url(font/PatuaOne-Regular.ttf);
+  }
+.nav h1{
+    margin-right: 450px;
+    font-family: PatuaOne-Regular, sans-serif;
+    letter-spacing: 0.1em;
+    color: #ffbc42;
+}
+.nav li a{
+	text-decoration: none;
+	font-family: PatuaOne-Regular, sans-serif;
+}
+.navbar a{
+	letter-spacing: 0.1em;
+	color: white;
+	padding: 8px;
+}
+.navbar{
+	position: relative;
+	text-decoration: none;
+	padding: 3px 0;
+}
+.nav .navbar::after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0%;
+	height: 1px;
+	background: white;
+	transition: 0.4s ease-out;
+}
+.nav .navbar:hover::after{
+	left: 0;
+	width: 100%;
+}
+/*Ends of Navigation Bar*/
+.gallery-container{
+	margin: auto;
+	width: 90%;
+}
+.gallery{
+    margin: 20px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 400px;
+    height: 425px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.desc{
+	text-align: center;
+	font-family: PatuaOne-Regular, sans-serif;
+}

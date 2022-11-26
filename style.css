@@ -1,0 +1,78 @@
+html {
+    background-image: url("img/frontview.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+  }
+  .main {
+    margin-top: -130px;
+  }
+  .main #container{
+    width: 100%;
+  }
+  .mainheading, .centerlogo, .backcenter, .centertext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+  }
+  .mainheading{
+    width: 100%;
+  }
+  .centerlogo {
+    height: auto;
+    animation: upAndDown 4s infinite;
+    z-index: 2;
+  }
+  .backcenter{
+    height: auto;
+    animation: upAndDown 4s infinite;
+    z-index: 1; 
+    opacity: 0;
+  } 
+  .centertext{
+   height: auto;
+   padding-top: 170px;
+   animation: upAndDown 4s infinite;
+   z-index: 2;
+  }
+  .mainheading:hover {
+    opacity: 1;
+  }
+  .mainheading:hover img{
+    height: auto;
+    animation: upAndDown 4s infinite;
+    opacity: 1;
+  }
+  @keyframes upAndDown {
+    0%{transform: translate3d(-50%, -50%, 0);}
+    50%{transform: translate3d(-50%, -52%, 0);}
+    100%{transform: translate(-50%, -50%, 0);}
+  }
+  @font-face{
+    font-family: AllertaStencil-Regular;
+    src: url(font/AllertaStencil-Regular.ttf);
+  }
+  .button {
+  position: absolute;
+  left: 50%;
+  bottom: 7%;
+  transform: translateX(-50%);
+  font-family: AllertaStencil-Regular, sans-serif;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  background-color: #f55547;
+  border: 3px solid #ffbc42;
+  padding: 13px 47px;
+  border-radius: 150px;
+  z-index: 10;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+  transition: background-color 0.5s ease;
+  }
+  .button:hover {
+  background-color: #ffbc42;
+  }
